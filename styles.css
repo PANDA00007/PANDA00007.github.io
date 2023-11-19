@@ -18,8 +18,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
-    background: skyblue;
+    padding: 10px 100px;
+    background: #75AAF0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,37 +39,107 @@ body {
 .logo::before {
     content: ''; /* Agrega contenido antes del texto */
     display: inline-block;
-    width: 40px; /* Ajusta el ancho de tu icono */
-    height: 40px; /* Ajusta la altura de tu icono */
-    background-image: url('img/Logo.png'); /* Ruta a tu imagen */
+    width: 80px; /* Ajusta el ancho de tu icono */
+    height: 80px; /* Ajusta la altura de tu icono */
+    background-image: url('img/logo-negro.png'); /* Ruta a tu imagen */
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: 5px; /* Ajusta el margen derecho según sea necesario */
+    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
 }
 
+.logo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-
-
-.navbar a {
-    position: relative;
-    font-size: 18px;
+.logo-text {
+    font-size: 32px; /* Tamaño del texto principal */
     color: aliceblue;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 40px;
+    font-weight: 700;
+    margin-bottom: 0px; /* Espacio entre el texto principal y el subtítulo */
 }
 
-.navbar a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
+.logo-subtitle {
+    font-size: 12px; /* Tamaño del texto más pequeño */
+    color: aliceblue;
+    font-weight: 400;
+}
+
+.banner {
+    position:absolute;
+    top: 100px;
     left: 0;
-    width: 0;
-    height: 2px;
-    background: aliceblue;
-    transition: .3s;
+    width: 50%; /* cuanto de la pantalla ocupa*/
+
 }
 
-.navbar a:hover::before {
+.banner1 {
+    content: ''; /* Agrega contenido antes del texto */
+    display: inline-block;
+    width:1099px; /* Ajusta el ancho de tu icono */
+    height: 400px; /* Ajusta la altura de tu icono */
+    background-image: url('img/banner3.png'); /* Ruta a tu imagen */
+    background-size:cover;
+    background-repeat: no-repeat;
+    cursor:default;;
+}
+
+
+body .wrapper{
+    margin-top: 100px;
+    margin-left: 1099px;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    min-height: 400px;
+}
+
+.wrapper{
+    width: 420px;
+    background-color: skyblue;
+    color: white;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wrapper .input-box{
     width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: aliceblue;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: gray;
+    font-weight: 600;
 }
