@@ -75,8 +75,9 @@ body {
 
 .banner1 {
     content: ''; /* Agrega contenido antes del texto */
-    display: inline-block;
-    min-width:1099px; /* Ajusta el ancho de tu icono */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%,3fr));
+    min-width: 104%; /* Ajusta el ancho de tu icono */
     min-height: 400px; /* Ajusta la altura de tu icono */
     background-image: url('img/banner3.png'); /* Ruta a tu imagen */
     background-size:cover;
@@ -86,8 +87,8 @@ body {
 
 
 body .wrapper{
-    margin-top: 100px;
-    margin-left: 1099px;
+    margin-top: 6.55%;
+    margin-left: 72%;
     display: flex;
     justify-content: center;
     align-items: right;
@@ -95,8 +96,8 @@ body .wrapper{
 }
 
 .wrapper{
-    min-width: 420px;
-    background-color: skyblue;
+    min-width: 10%;
+    background-color:  lightslategray;
     color: white;
 }
 
@@ -176,16 +177,15 @@ body .product{
 
 .familia {
     position:absolute;
-    top: 74%;
+    top: 75%;
     left: 60%;
 }
 
 .familia-img {
     content: ''; /* Agrega contenido antes del texto */
-    display: inline-block;
-    width:550px; /* Ajusta el ancho de tu icono */
-    height: 280px; /* Ajusta la altura de tu icono */
-    background-image: url('img/familia.png'); /* Ruta a tu imagen */
+    display: flex;
+    width:550px;
+    height: 280px; 
     background-size:cover;
     background-repeat: no-repeat;
     cursor:default;
@@ -200,7 +200,6 @@ body .product{
     width: 350px;
     height: 320px;
     margin-right: 100px;
-
 }
 
 .box2, .box3{
@@ -221,7 +220,7 @@ body .product{
     font-weight: 200;
     font-size: 17px;
     text-align: left;
-    margin-top: 5px;
+    margin-top: 5%;
 }
 
 .box2 h4{
@@ -236,4 +235,149 @@ body .product{
     font-size: 17px;
     text-align: left;
     margin-top: 5px;
+}
+
+.separador{
+    padding-top: 2%;
+    display:block;
+    background-color: lightslategray;
+    justify-content: center;   
+    padding-bottom: 3%; 
+    text-align: center;
+}
+.separador h1{
+    text-align: center;
+    padding-top: 2%;
+    color: whitesmoke;
+    line-height: 0.5;
+}
+
+.separador h2{
+    text-align: center;
+    padding-top: 2%;
+    color: whitesmoke;
+    line-height: 0.5;
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.separador h3{
+    text-align: center;
+    padding-top: 2%;
+    color: whitesmoke;
+    line-height: 0.5;
+    font-size: 180%;
+    font-weight: 550;
+}
+
+.imagenes-descripcion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3%; /* Ajusta este valor según sea necesario */
+}
+
+.imagen-descripcion {
+    text-align: center;
+    width: 24%;
+}
+
+.imagen-descripcion img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.d1, .d2, .d3 {
+    margin-top: 5%; /* Ajusta este valor según sea necesario */
+    color: whitesmoke; 
+}
+
+
+
+
+.productos {
+    justify-content: center;
+    padding-bottom: 3%;
+}
+
+.productos h1{
+    text-align: center;
+    padding-top: 5%;
+    color: black;
+}
+
+.descuento{
+    display: flex;
+    justify-content: center;
+    background-color: lightslategray;
+}
+
+.dsct, .ofertat{
+    width: 50%;
+    padding: 2%;
+    margin-right: 5%;
+}
+
+
+.dsct h3{
+    text-align: left;
+    font-size: 200%;
+    font-weight: 600;
+    margin-left: 5%;
+    color: whitesmoke;
+    line-height: 1.2;
+}
+
+.dsct h1{
+    text-align: left;
+    font-size: 600%;
+    color: aliceblue;
+    line-height: 0.8;
+    font-weight:bolder;
+}
+
+.dsct h4{
+    text-align: left;
+    font-weight: 200;
+    margin-left: 3%;
+    color: whitesmoke;
+    font-size: 150%;
+    line-height: 1.2;
+}
+
+.oferta h5{
+    margin-top: 6%;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 550;
+    margin-left: 7%;
+    color: whitesmoke;
+    line-height: 1.2;
+}
+
+.oferta h6{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 300;
+    margin-left: 7%;
+    color: whitesmoke;
+    line-height: 1.2;
+}
+
+.oferta .btn{
+    margin-left: 29%;
+    margin-top: 3%;
+    width: 50%;
+    height: 20%;
+    background: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: gray;
+    font-weight: 600;
 }
