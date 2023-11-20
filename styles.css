@@ -82,7 +82,7 @@ body {
     background-image: url('img/banner3.png'); /* Ruta a tu imagen */
     background-size:cover;
     background-repeat: no-repeat;
-    cursor:default;;
+    cursor:default;
 }
 
 
@@ -105,6 +105,13 @@ body .wrapper{
     font-size: 36px;
     text-align: center;
     margin-top: 20px;
+}
+
+.wrapper h6{
+    font-weight: 100;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 5px;
 }
 
 .wrapper .input-box{
@@ -142,4 +149,91 @@ body .wrapper{
     font-size: 16px;
     color: gray;
     font-weight: 600;
+}
+
+body .product{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 700px;
+    justify-content: right;
+    align-items: right;
+    min-height: 350px;
+}
+.product h2{
+    font-size: 26px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.product h4{
+    font-weight: 100;
+    font-size: 17px;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.familia {
+    position:absolute;
+    top: 550px;
+    left: 900px;
+}
+
+.familia-img {
+    content: ''; /* Agrega contenido antes del texto */
+    display: inline-block;
+    width:550px; /* Ajusta el ancho de tu icono */
+    height: 280px; /* Ajusta la altura de tu icono */
+    background-image: url('img/familia.png'); /* Ruta a tu imagen */
+    background-size:cover;
+    background-repeat: no-repeat;
+    cursor:default;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.box1 {
+    width: 350px;
+    height: 320px;
+    margin-right: 100px;
+
+}
+
+.box2, .box3{
+    width: 380px;
+    height: 280px;
+    margin-right: 50px;
+    padding: 26px;
+    transition: .3s ease-in-out;
+    cursor: default;
+}
+
+.box2:hover,
+.box3:hover{
+    background-color: skyblue;
+}
+
+.box1 h4{
+    font-weight: 200;
+    font-size: 17px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.box2 h4{
+    font-weight: 200;
+    font-size: 17px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.box3 h4{
+    font-weight: 200;
+    font-size: 17px;
+    text-align: left;
+    margin-top: 5px;
 }
