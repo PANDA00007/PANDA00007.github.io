@@ -68,7 +68,7 @@ body {
 
 .banner {
     position:absolute;
-    top: 100px;
+    top: 12.8%;
     width: 70%; /* cuanto de la pantalla ocupa*/
 
 }
@@ -87,7 +87,7 @@ body {
 
 
 body .wrapper{
-    margin-top: 6.55%;
+    margin-top: 6.3%;
     margin-left: 72%;
     display: flex;
     justify-content: center;
@@ -151,90 +151,81 @@ body .wrapper{
     font-weight: 600;
 }
 
-
-body .product{
-    margin-top: 4%;
-    margin-left: 4%;
-    margin-right: 45%;
-    justify-content: right;
-    align-items: right;
-    min-height: 350px;
-}
-.product h2{
-    font-size: 26px;
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 50px;
+.intro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    width: 100%;
+    height: auto;
+    padding: 7%;
 }
 
-.product h4{
-    font-weight: 100;
-    font-size: 17px;
-    text-align: left;
-    margin-top: 5px;
-    margin-left: 50px;
+.product h2, p{
+    text-align: justify;
+    
+    height: auto;
+    overflow: hidden;
+    word-wrap: break-word; 
+    max-width: 55%;
 }
 
 .familia {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     position:absolute;
     top: 75%;
     left: 60%;
 }
 
+@media (max-width: 900px) {
+    .familia {
+        grid-template-columns: 1fr; /* Cambia a una sola columna cuando el ancho de la pantalla sea igual o menor a 768px */
+    }
+}
+
 .familia-img {
     content: ''; /* Agrega contenido antes del texto */
-    display: flex;
-    width:550px;
-    height: 280px; 
+    display: grid;
+    width: 90%;
     background-size:cover;
     background-repeat: no-repeat;
     cursor:default;
 }
 
 .container{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    width: 100%;
+    height: auto;
+    padding-left: 5%;
+    padding-top: 5%;
 }
 
-.box1 {
-    width: 350px;
-    height: 320px;
-    margin-right: 100px;
-}
-
-.box2, .box3{
-    width: 380px;
-    height: 280px;
-    margin-right: 50px;
-    padding: 26px;
+.box1, .box2, .box3{
+    margin-right: 8%;
+    padding: 5%;
     transition: .3s ease-in-out;
     cursor: default;
+    height: auto; /* Altura automática */
+    overflow:hidden; /* Oculta el contenido que exceda el contenedor */
+    word-wrap: break-word; /* Permite que las palabras largas se rompan y se ajusten */
+    margin-bottom: 10%; /* Espacio entre las cajas */
 }
 
+/*Query para reducir */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr; /* Cambia a una sola columna cuando el ancho de la pantalla sea igual o menor a 768px */
+    }
+}
 .box2:hover,
 .box3:hover{
     background-color: skyblue;
 }
 
-.box1 h4{
+.box1 h4, .box2 h4, .box3 h4 {
     font-weight: 200;
-    font-size: 17px;
-    text-align: left;
-    margin-top: 5%;
-}
-
-.box2 h4{
-    font-weight: 200;
-    font-size: 17px;
-    text-align: left;
-    margin-top: 5px;
-}
-
-.box3 h4{
-    font-weight: 200;
-    font-size: 17px;
-    text-align: left;
-    margin-top: 5px;
+    text-align: justify;
+    margin-top: 1%; /* Puedes ajustar este valor según sea necesario */
 }
 
 .separador{
@@ -266,7 +257,7 @@ body .product{
     padding-top: 2%;
     color: whitesmoke;
     line-height: 0.5;
-    font-size: 180%;
+    font-size: auto;
     font-weight: 550;
 }
 
@@ -279,7 +270,7 @@ body .product{
 
 .imagen-descripcion {
     text-align: center;
-    width: 24%;
+    width: 25%; /* Establece el ancho para ocupar un cuarto del contenedor */
 }
 
 .imagen-descripcion img {
@@ -290,12 +281,10 @@ body .product{
 
 .d1, .d2, .d3 {
     margin-top: 5%; /* Ajusta este valor según sea necesario */
-    color: whitesmoke; 
+    color: #333; /* Color del texto */
+    font-size: 180%;
+
 }
-
-
-
-
 .productos {
     justify-content: center;
     padding-bottom: 3%;
@@ -305,6 +294,19 @@ body .product{
     text-align: center;
     padding-top: 5%;
     color: black;
+}
+.banner2{
+    content: ''; /* Agrega contenido antes del texto */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%,3fr));
+    margin-left: 4%;
+    margin-top: 3%;
+    max-width: 96%; /* Ajusta el ancho de tu icono */
+    min-height: 400px; /* Ajusta la altura de tu icono */
+    background-image: url('img/banner3.png'); /* Ruta a tu imagen */
+    background-size:cover;
+    background-repeat: no-repeat;
+    cursor:default;
 }
 
 .descuento{
@@ -318,7 +320,6 @@ body .product{
     padding: 2%;
     margin-right: 5%;
 }
-
 
 .dsct h3{
     text-align: left;
@@ -380,4 +381,11 @@ body .product{
     font-size: 16px;
     color: gray;
     font-weight: 600;
+}
+
+.footer{
+    padding: 1%;
+    background:#75AAF0;
+    color:whitesmoke;
+    text-align: center;
 }
